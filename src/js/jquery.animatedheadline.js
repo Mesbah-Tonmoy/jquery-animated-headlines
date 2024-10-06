@@ -66,7 +66,7 @@
                 var word = $(this),
                     letters = word.text().split(''),
                     selected = word.hasClass('is-visible');
-                for (i in letters) {
+                for (let i in letters) {
                     if(word.parents('.rotate-2').length > 0) letters[i] = '<em>' + letters[i] + '</em>';
                     letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>': '<i>' + letters[i] + '</i>';
                 }
